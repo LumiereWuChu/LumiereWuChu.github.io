@@ -1,5 +1,17 @@
 # GitHub Pages 与 Sites 发布
 
+## 免费网址：已查证
+
+GitHub Pages 对公开仓库提供免费静态托管，并提供 `<username>.github.io` 子域名。此账号对应的网址是 **https://lumierewuchu.github.io/**。现有仓库名称已符合个人主页规则，因此不必再创建一个仓库，也不必购买域名。
+
+如果以后想使用自己的 `.com`、`.me` 等独立域名，需要自行注册该域名，再绑定到 GitHub Pages；免费 `github.io` 地址可直接用于简历、个人名片和求职。
+
+本项目使用静态页面与静态媒体，适合 GitHub Pages。创作台在本地编辑并导出内容，提交到仓库后自动构建；浏览者无需登录即可访问公开的 GitHub Pages 站点。Sites 当前预览仍为本人可访问，两个地址的访问范围不同。
+
+准备公开新版时，直接打开 [这个仓库的 Pages 设置](https://github.com/LumiereWuChu/LumiereWuChu.github.io/settings/pages)，将 Source 设为 **GitHub Actions**，再合并 [迁移 PR](https://github.com/LumiereWuChu/LumiereWuChu.github.io/pull/1)。本次更新保留 PR 审阅步骤；没有自动替换旧的公共主页。
+
+参考：[GitHub Pages 快速入门](https://docs.github.com/en/pages/quickstart)、[自定义域名说明](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)。核验日期：2026-11-24。
+
 ## 已有站点
 
 - GitHub 账号：`LumiereWuChu`
@@ -35,6 +47,10 @@ Sites 使用独立源仓库和 `.openai/hosting.json` 标识。新 Sites 默认�
 工作流依据 [GitHub 官方自定义工作流说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 与 [发布源设置说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 # English
+
+GitHub Pages provides free static hosting for public repositories and a `<username>.github.io` subdomain. This account's address is **https://lumierewuchu.github.io/**, and the existing repository already has the correct name. No separate domain purchase is required. A custom `.com` or `.me` domain must be registered separately if desired.
+
+Open [repository Pages settings](https://github.com/LumiereWuChu/LumiereWuChu.github.io/settings/pages), select **GitHub Actions**, then merge [the migration PR](https://github.com/LumiereWuChu/LumiereWuChu.github.io/pull/1) when ready to switch the public homepage. The PR remains reviewable; the current public homepage is not replaced automatically by this update. This follows [GitHub's quickstart](https://docs.github.com/en/pages/quickstart) and [custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), checked on 24 November 2026.
 
 The existing repository is `LumiereWuChu/LumiereWuChu.github.io` on branch `master`. The new source lives in `personal-site/`; the original Hugo files remain available. The migration also replaces `.github/workflows/deploy.yml`, because the old workflow could publish during pull-request events.
 

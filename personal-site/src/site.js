@@ -11,6 +11,43 @@ input?.addEventListener('input',updateSearch);
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(a=>a.setAttribute('aria-pressed',String(a===b)));updateSearch()}));
 document.querySelector('#print-cv')?.addEventListener('click',()=>window.print());
 const dialog=document.querySelector('#photo-dialog');
-document.querySelectorAll('[data-photo]').forEach(b=>b.addEventListener('click',()=>{const im=dialog.querySelector('img');im.src=b.dataset.photo;im.alt=b.dataset.alt;dialog.showModal()}));
-dialog?.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());
-dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+if(dialog){
+ const buttons=[...document.querySelectorAll('[data-photo]')];
+ const image=dialog.querySelector('img');
+ const status=dialog.querySelector('.lightbox-status');
+ const previous=dialog.querySelector('[data-photo-prev]');
+ const next=dialog.querySelector('[data-photo-next]');
+ let group=[],index=0,opener=null,request=0,previousOverflow='';
+ function showPhoto(position){
+  index=(position+group.length)%group.length;
+  const button=group[index],currentRequest=++request;
+  image.hidden=true;image.alt=button.dataset.alt||'';
+  status.textContent=dialog.dataset.loading;
+  dialog.querySelector('#lightbox-title').textContent=button.dataset.photoTitle||button.getAttribute('aria-label')||'';
+  dialog.querySelector('#lightbox-caption').textContent=button.dataset.caption||'';
+  dialog.querySelector('#lightbox-count').textContent=`${index+1} / ${group.length}`;
+  dialog.querySelector('.lightbox-original').href=button.dataset.photo;
+  previous.disabled=next.disabled=group.length<2;
+  const pendingImage=new Image();
+  pendingImage.onload=()=>{if(currentRequest!==request||!dialog.open)return;image.src=pendingImage.src;image.hidden=false;status.textContent='';};
+  pendingImage.onerror=()=>{if(currentRequest===request&&dialog.open)status.textContent=dialog.dataset.error;};
+  pendingImage.src=button.dataset.photo;
+ }
+ buttons.forEach(button=>button.addEventListener('click',()=>{
+  opener=button;
+  group=buttons.filter(item=>(item.dataset.gallery||'entries')===(button.dataset.gallery||'entries'));
+  previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';
+  dialog.showModal();showPhoto(group.indexOf(button));
+  dialog.querySelector('.dialog-close').focus();
+ }));
+ previous.addEventListener('click',()=>showPhoto(index-1));
+ next.addEventListener('click',()=>showPhoto(index+1));
+ dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
+ dialog.addEventListener('keydown',event=>{
+  if(event.altKey||event.ctrlKey||event.metaKey)return;
+  if(event.key==='ArrowLeft'){event.preventDefault();showPhoto(index-1);}
+  if(event.key==='ArrowRight'){event.preventDefault();showPhoto(index+1);}
+ });
+ dialog.addEventListener('close',()=>{request++;document.body.style.overflow=previousOverflow;opener?.focus();});
+ dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+}

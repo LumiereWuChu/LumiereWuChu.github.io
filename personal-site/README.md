@@ -31,11 +31,14 @@ node scripts/check.mjs
 | `content/profile.json` | 姓名、简介、公开联系信息、CV 文件路径 |
 | `content/projects.json` | 研究项目，双语介绍 |
 | `content/publications.json` | 论文、作者、原始来源和发表状态 |
+| `content/photography.json` | 精选摄影作品、双语标题、图注、替代文本和图片路径 |
 | `content/entries.json` | 笔记、诗歌、摄影、音乐，双语正文 |
 | `content/uploads/` | 自己上传的图像、音频和 CV |
 | `src/style.css` | 布局、字体、颜色、打印样式 |
 
 Markdown 正文支持段落、标题、无序列表、引用、加粗、行内代码、代码块和 HTTPS 链接。当前不使用第三方数学渲染器，精确公式可使用代码块。原始 HTML 不执行。
+
+精选摄影集可直接编辑 `content/photography.json`：分别修改 `title.zh/en`、`caption.zh/en` 和 `alt.zh/en`，调整数组顺序即可改变展示顺序。`src` 和 `thumbnail` 指向 `content/uploads/` 内的网页用图。现有 8 幅作品使用从个人摄影目录导出的网页副本，原始照片保持不变；未知拍摄日期保留 `null`。
 
 ## GitHub 发布
 
@@ -47,12 +50,12 @@ Markdown 正文支持段落、标题、无序列表、引用、加粗、行内�
 
 ## 已有内容与边界
 
-- 公开身份、4 条论文记录根据实验室、出版商和 arXiv 核验；预印本、期刊研究论文和评论分别标记。
+- 公开身份及 7 条论文记录根据实验室、出版商、出版商提交的 DOI 元数据和 arXiv 核验：期刊研究论文 2 条、预印本 2 条、会议论文 2 条、评论 1 条。来源见 [论文来源说明](docs/PUBLICATION_SOURCES.md)。
 - 旧站一篇已发布的读书笔记迁为双语整理版，保留日期与原文链接。
 - GenMPU 和光辅助 KV-cache 使用研究方向简介，不公开内部性能数据。
-- 音乐、诗歌、摄影尚无本人上传作品，页面如实显示待收录状态。
+- 已加入本人提供的个人照片及 8 幅个人摄影作品；音乐、诗歌仍待收录。
 - CV 页面是已核实资料的可打印研究概要，不假造教育年份、获奖或任职经历。可通过创作台替换为个人完整 PDF。
-- 首页图像为本项目生成的 SVG 光影视觉，不是实验场图或个人摄影。
+- 首页使用本人提供的个人照片；摄影集展示个人作品。站内 SVG 光影视觉仅为装饰，不是实验场图。
 
 ## 验证
 
@@ -67,6 +70,10 @@ node --test tests/import-entry.test.mjs
 ## English
 
 This dependency-free bilingual site contains research directions, verified publications, a migrated reading note, creative collections, and a printable research CV. Run `node scripts/build.mjs`, `node scripts/check.mjs`, then `node scripts/serve.mjs 4173`.
+
+The collection currently includes the owner's portrait, eight photographs, and seven publication records: two journal research articles, two preprints, two conference papers, and one commentary. Music and poetry are awaiting the owner's contributions. Bibliographic sources and verification limits are documented in [Publication sources](docs/PUBLICATION_SOURCES.md).
+
+Edit `content/photography.json` to curate the photo collection. Each item has bilingual `title`, `caption`, and `alt` fields; array order controls display order. The `src` and `thumbnail` fields point to web copies in `content/uploads/`. Source photographs remain unchanged; unknown capture dates stay `null`.
 
 Open `tools/editor.html` locally to create bilingual notes, poems, photo or music entries, or upload your PDF CV. Export a JSON bundle, run `node scripts/import-entry.mjs path/to/bundle.json`, rebuild, review, then commit the reviewed source and media. Local draft saving does not publish anything. See the [bilingual creator guide](docs/CREATOR_GUIDE.md).
 
