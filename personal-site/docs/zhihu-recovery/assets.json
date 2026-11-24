@@ -1,0 +1,442 @@
+[
+  {
+    "article": "ai-science",
+    "screenshot": 1,
+    "order": 1,
+    "path": "uploads/zhihu-ai-science-1.webp",
+    "caption": {
+      "zh": "论文题图",
+      "en": "Paper title and publication information"
+    },
+    "suggested_position": "title",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      133,
+      1373,
+      742
+    ],
+    "width": 1138,
+    "height": 609,
+    "bytes": 41848,
+    "sha256": "08a41bd74c9d492ee882a72d2806289cfa5808213c8fb972607c63142dc4921d"
+  },
+  {
+    "article": "ai-science",
+    "screenshot": 1,
+    "order": 2,
+    "path": "uploads/zhihu-ai-science-2.webp",
+    "caption": {
+      "zh": "科学探索中的群体登山效应",
+      "en": "The group mountain-climbing effect of scientific exploration"
+    },
+    "suggested_position": "before first paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      1285,
+      1373,
+      1901
+    ],
+    "width": 1138,
+    "height": 616,
+    "bytes": 76446,
+    "sha256": "35011e9ef2863e3d3661a4db73868eb363bf0b2b2dcb7fa7894665c9bac0e9d5"
+  },
+  {
+    "article": "ai-science",
+    "screenshot": 1,
+    "order": 3,
+    "path": "uploads/zhihu-ai-science-3.webp",
+    "caption": {
+      "zh": "知识广度、引用分布与数据丰度",
+      "en": "Knowledge extent, citation distribution, and data abundance"
+    },
+    "suggested_position": "after 1.37-year paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      2955,
+      1373,
+      3917
+    ],
+    "width": 1138,
+    "height": 962,
+    "bytes": 107594,
+    "sha256": "e138be700ae879551426426b88c7272d3f6955ec1af77131bcbc36294040c280"
+  },
+  {
+    "article": "metadevices",
+    "screenshot": 2,
+    "order": 1,
+    "path": "uploads/zhihu-metadevices-1.webp",
+    "caption": {
+      "zh": "论文题图",
+      "en": "Paper title and publication information"
+    },
+    "suggested_position": "title",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      165,
+      1373,
+      447
+    ],
+    "width": 1138,
+    "height": 282,
+    "bytes": 28292,
+    "sha256": "bac60ed47755355afc2dcfae7af1c47da503a77e25ce726c86a06f01c353bed2"
+  },
+  {
+    "article": "metadevices",
+    "screenshot": 2,
+    "order": 2,
+    "path": "uploads/zhihu-metadevices-2.webp",
+    "caption": {
+      "zh": "可重构方程求解器（原截图顶部被悬浮栏遮挡）",
+      "en": "Reconfigurable equation solver (top obscured in the supplied screenshot)"
+    },
+    "suggested_position": "after architecture overview",
+    "source_occluded": true,
+    "crop_box_original": [
+      235,
+      1264,
+      1373,
+      1978
+    ],
+    "width": 1138,
+    "height": 714,
+    "bytes": 57498,
+    "sha256": "d05275ee8a86d1809be4344a5fb55b2f370d9290db9dfade1afbc5d06f801378"
+  },
+  {
+    "article": "metadevices",
+    "screenshot": 2,
+    "order": 3,
+    "path": "uploads/zhihu-metadevices-3.webp",
+    "caption": {
+      "zh": "用 Miller 架构求解方程",
+      "en": "Solving equations with the Miller architecture"
+    },
+    "suggested_position": "after DCM architecture paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      2619,
+      1373,
+      3143
+    ],
+    "width": 1138,
+    "height": 524,
+    "bytes": 52048,
+    "sha256": "b3ac7358a9b6dadc87a2b27480fdf216db75036595552601204a95036839631a"
+  },
+  {
+    "article": "complexity",
+    "screenshot": 3,
+    "order": 1,
+    "path": "uploads/zhihu-complexity-1.webp",
+    "caption": {
+      "zh": "圣塔菲研究所 Cowan 校区",
+      "en": "Santa Fe Institute, Cowan Campus"
+    },
+    "suggested_position": "title",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      152,
+      1373,
+      909
+    ],
+    "width": 1138,
+    "height": 757,
+    "bytes": 163060,
+    "sha256": "c0f5b39c251ca2e90a7f1feb8b6c9e4f7db6aa98e3fd82717bab2b304b49eb51"
+  },
+  {
+    "article": "complexity",
+    "screenshot": 3,
+    "order": 2,
+    "path": "uploads/zhihu-complexity-2.webp",
+    "caption": {
+      "zh": "《复杂》思维导图（左上角部分被目录按钮遮挡）",
+      "en": "Mind map of Complexity (a small area at top left is obscured by the contents button)"
+    },
+    "suggested_position": "under mind map heading",
+    "source_occluded": true,
+    "crop_box_original": [
+      235,
+      1400,
+      1373,
+      2136
+    ],
+    "width": 1138,
+    "height": 736,
+    "bytes": 48102,
+    "sha256": "922a1ae676226b24513dcbef6da819273f1f02457e4c134935d8bc00555158cd"
+  },
+  {
+    "article": "complexity",
+    "screenshot": 3,
+    "order": 3,
+    "path": "uploads/zhihu-complexity-3.webp",
+    "caption": {
+      "zh": "曼德勃罗集",
+      "en": "The Mandelbrot set"
+    },
+    "suggested_position": "end of article",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      5409,
+      1373,
+      6177
+    ],
+    "width": 1138,
+    "height": 768,
+    "bytes": 49080,
+    "sha256": "e8e57821b366d1aa5105d5f802b2fb1562fbd9ba7daa0c0a052c27012e11a258"
+  },
+  {
+    "article": "neuromorphic",
+    "screenshot": 4,
+    "order": 1,
+    "path": "uploads/zhihu-neuromorphic-1.webp",
+    "caption": {
+      "zh": "论文题图",
+      "en": "Paper title and publication information"
+    },
+    "suggested_position": "title",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      165,
+      1373,
+      721
+    ],
+    "width": 1138,
+    "height": 556,
+    "bytes": 38866,
+    "sha256": "92f7cb1da878ac98d321ca880535594a26e62ec984cd20abfaeafe406381cba9"
+  },
+  {
+    "article": "neuromorphic",
+    "screenshot": 4,
+    "order": 2,
+    "path": "uploads/zhihu-neuromorphic-2.webp",
+    "caption": {
+      "zh": "神经形态硬件与三维光子系统",
+      "en": "Neuromorphic hardware and three-dimensional photonic systems"
+    },
+    "suggested_position": "after first point",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      1552,
+      1373,
+      2418
+    ],
+    "width": 1138,
+    "height": 866,
+    "bytes": 72756,
+    "sha256": "e20aafc10af25064fdbaea4be28610b4537a5cb030e6b7444333f464f8f02b6e"
+  },
+  {
+    "article": "neuromorphic",
+    "screenshot": 4,
+    "order": 3,
+    "path": "uploads/zhihu-neuromorphic-3.webp",
+    "caption": {
+      "zh": "基于电光转换深度的神经形态计算方案",
+      "en": "Neuromorphic computing schemes across electronic and photonic domains"
+    },
+    "suggested_position": "after second point",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      2850,
+      1373,
+      3192
+    ],
+    "width": 1138,
+    "height": 342,
+    "bytes": 23092,
+    "sha256": "2ca56661e47c6961497c21b88ae3b44b4a74139e2d323e67bc1938e41bc4b913"
+  },
+  {
+    "article": "neuromorphic",
+    "screenshot": 4,
+    "order": 4,
+    "path": "uploads/zhihu-neuromorphic-4.webp",
+    "caption": {
+      "zh": "脉冲神经网络",
+      "en": "Spiking neural networks"
+    },
+    "suggested_position": "after third point",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      3476,
+      1373,
+      4334
+    ],
+    "width": 1138,
+    "height": 858,
+    "bytes": 47878,
+    "sha256": "3c8fe2da62e97a50be8945a076accdf46b37fa83ee68c7151c9ee3d7789b70bf"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 1,
+    "path": "uploads/zhihu-unitary-1.webp",
+    "caption": {
+      "zh": "MZI 实现的酉矩阵",
+      "en": "Unitary matrix implemented by an MZI"
+    },
+    "suggested_position": "after first paragraph of section one",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      1869,
+      1373,
+      2279
+    ],
+    "width": 1138,
+    "height": 410,
+    "bytes": 23624,
+    "sha256": "a3ad469f07010b34ae26fbb1fa37d6b684542115057a7ae4f3bc45f5aa03b6c9"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 2,
+    "path": "uploads/zhihu-unitary-2.webp",
+    "caption": {
+      "zh": "MZI 单元嵌入 N 维空间",
+      "en": "Embedding an MZI unit in an N-dimensional space"
+    },
+    "suggested_position": "after embedding paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      2501,
+      1373,
+      3196
+    ],
+    "width": 1138,
+    "height": 695,
+    "bytes": 19990,
+    "sha256": "e8ec37bf8c3e904ff249a4874b87f59ef151f37b1bd2290c5c906916c635d0b7"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 3,
+    "path": "uploads/zhihu-unitary-3.webp",
+    "caption": {
+      "zh": "级联矩阵与对角相移矩阵",
+      "en": "Cascaded matrices and the diagonal phase-shift matrix"
+    },
+    "suggested_position": "after node-count paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      3464,
+      1373,
+      3662
+    ],
+    "width": 1138,
+    "height": 198,
+    "bytes": 10876,
+    "sha256": "999f8dbb33644e627de14ed8c422fddd2a078e2366526e87df323970608fa4c6"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 4,
+    "path": "uploads/zhihu-unitary-4.webp",
+    "caption": {
+      "zh": "表示局部相互作用的 MZI 矩阵网格图",
+      "en": "MZI mesh illustrating local interactions"
+    },
+    "suggested_position": "after cascade introduction; also suitable as cover",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      3874,
+      1373,
+      4920
+    ],
+    "width": 1138,
+    "height": 1046,
+    "bytes": 68314,
+    "sha256": "897346debddd9dd64a0da2540aef7a9f191df64068ea7d86edbc665d68744a90"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 5,
+    "path": "uploads/zhihu-unitary-5.webp",
+    "caption": {
+      "zh": "Haar 初始化与均匀随机初始化的场传播比较",
+      "en": "Field propagation with Haar and uniform random initialization"
+    },
+    "suggested_position": "after Haar initialization paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      6083,
+      1373,
+      6566
+    ],
+    "width": 1138,
+    "height": 483,
+    "bytes": 47150,
+    "sha256": "322c25398b0c78a39fd9b66fe4b2b1e9b28806b88c42266a01633d66cfeb4298"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 6,
+    "path": "uploads/zhihu-unitary-6.webp",
+    "caption": {
+      "zh": "冗余矩形网格与置换矩形网格",
+      "en": "Redundant and permuting rectangular meshes"
+    },
+    "suggested_position": "after additional tunable layers paragraph",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      7365,
+      1373,
+      8554
+    ],
+    "width": 1138,
+    "height": 1189,
+    "bytes": 152726,
+    "sha256": "7e6266f09a8db103eb242d2d7198db9b8c2ee787b686e6842ab243555dc26b90"
+  },
+  {
+    "article": "unitary",
+    "screenshot": 5,
+    "order": 7,
+    "path": "uploads/zhihu-unitary-7.webp",
+    "caption": {
+      "zh": "矩形、置换矩形与冗余矩形网格的训练误差",
+      "en": "Training error for rectangular, permuting, and redundant rectangular meshes"
+    },
+    "suggested_position": "after summary before references",
+    "source_occluded": false,
+    "crop_box_original": [
+      235,
+      9653,
+      1373,
+      10382
+    ],
+    "width": 1138,
+    "height": 729,
+    "bytes": 48926,
+    "sha256": "75d889d70cf3248f1fc9eec2f2a0e824b1c82325c91d7a5912fbcfb178e693bd"
+  }
+]
