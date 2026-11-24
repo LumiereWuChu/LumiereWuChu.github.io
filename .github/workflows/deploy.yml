@@ -1,51 +1,62 @@
-name: Deploy to Github Pages
+name: Build and publish Lumière
 
 on:
-    push:
-        branches: [master]
-    pull_request:
-        branches: [master]
+  push:
+    branches: [master]
+    paths:
+      - 'personal-site/**'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'personal-site/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build both languages
+        working-directory: personal-site
+        env:
+          SITE_URL: https://lumierewuchu.github.io
+        run: node scripts/build.mjs
+      - name: Check links and bilingual content
+        working-directory: personal-site
+        run: node scripts/check.mjs
+      - name: Test content import
+        working-directory: personal-site
+        run: node --test tests/import-entry.test.mjs
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: personal-site/dist
 
-        permissions:
-            # Give the default GITHUB_TOKEN write permission to commit and push the
-            # added or changed files to the repository.
-            contents: write
-
-        steps:
-            - uses: actions/checkout@v4
-              with:
-                  fetch-depth: 0
-
-            - name: Cache Hugo resources
-              uses: actions/cache@v4
-              env:
-                  cache-name: cache-hugo-resources
-              with:
-                  path: resources
-                  key: ${{ env.cache-name }}
-
-            - uses: actions/setup-go@v5
-              with:
-                  go-version: "^1.17.0"
-            - run: go version
-
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
-              with:
-                  hugo-version: "latest"
-                  extended: true
-
-            - name: Build
-              run: hugo --minify --gc
-
-            - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  branch: gh-pages
-                  folder: public
-                  clean: true
-                  single-commit: true
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

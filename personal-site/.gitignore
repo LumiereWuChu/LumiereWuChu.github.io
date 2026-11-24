@@ -1,0 +1,12 @@
+node_modules/
+output/
+*.tar.gz
+*.zip
+.DS_Store
+content/.backups/
+content/backups/
+*-bundle.json
+*.lumiere.json
+drafts/
+.sites-workflow/
+SOURCE_AUDIT.md

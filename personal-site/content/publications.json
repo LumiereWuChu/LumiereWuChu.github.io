@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nc-mpu", "year": 2026, "kind": "preprint",
+    "title": "Inverse-designed meta processing units for multi-task near-field photonic computing",
+    "authors": "Chu Wu, Zeyu Cai, Songtao Yang, Ruoyu Shen, Yinan Zhao, Haiou Zhang, Wei Chu & Xing Lin",
+    "venue": "arXiv:2607.08360",
+    "status": {"zh": "预印本", "en": "Preprint"},
+    "url": "https://arxiv.org/abs/2607.08360",
+    "citation": "Wu, C., Cai, Z., Yang, S., Shen, R., Zhao, Y., Zhang, H., Chu, W. & Lin, X. Inverse-designed meta processing units for multi-task near-field photonic computing. arXiv:2607.08360 (2026). https://arxiv.org/abs/2607.08360"
+  },
+  {
+    "id": "dmnn-meta-training", "year": 2026, "kind": "journal",
+    "title": "Meta-Training of Diffractive Meta-Neural Networks for Super-Resolution Direction of Arrival Estimation",
+    "authors": "Songtao Yang, Sheng Gao, Chu Wu, Zejia Zhao, Haiou Zhang & Xing Lin",
+    "venue": "Laser & Photonics Reviews 20(11), e02608 (2026)",
+    "status": {"zh": "期刊论文", "en": "Journal article"},
+    "url": "https://doi.org/10.1002/lpor.202502608",
+    "citation": "Yang, S., Gao, S., Wu, C., Zhao, Z., Zhang, H. & Lin, X. Meta-Training of Diffractive Meta-Neural Networks for Super-Resolution Direction of Arrival Estimation. Laser & Photonics Reviews 20(11), e02608 (2026). https://doi.org/10.1002/lpor.202502608"
+  },
+  {
+    "id": "neuromorphic-photonics-roadmap", "year": 2025, "kind": "preprint",
+    "title": "Roadmap on Neuromorphic Photonics",
+    "authors": "Daniel Brunner et al. (including Chu Wu)",
+    "venue": "arXiv:2501.07917",
+    "status": {"zh": "预印本 · 路线图", "en": "Preprint · Roadmap"},
+    "url": "https://arxiv.org/abs/2501.07917",
+    "citation": "Brunner, D., et al. Roadmap on Neuromorphic Photonics. arXiv:2501.07917 (2025). https://arxiv.org/abs/2501.07917"
+  },
+  {
+    "id": "pcm-diffractive-network", "year": 2024, "kind": "journal",
+    "title": "Non-Volatile Reconfigurable Optical Digital Diffractive Neural Network Based on Phase Change Material",
+    "authors": "Qiaomu Hu, Jingyu Zhao, Chu Wu, Rui Zeng, Xiaobing Zhou, Shuang Zheng & Minming Zhang",
+    "venue": "IEEE Photonics Journal 16(6), 1–8 (2024)",
+    "status": {"zh": "期刊论文", "en": "Journal article"},
+    "url": "https://doi.org/10.1109/JPHOT.2024.3508052",
+    "citation": "Hu, Q., Zhao, J., Wu, C., Zeng, R., Zhou, X., Zheng, S. & Zhang, M. Non-Volatile Reconfigurable Optical Digital Diffractive Neural Network Based on Phase Change Material. IEEE Photonics Journal 16(6), 1–8 (2024). https://doi.org/10.1109/JPHOT.2024.3508052"
+  },
+  {
+    "id": "pcm-diffractive-network-cleo", "year": 2024, "kind": "conference",
+    "title": "Non-volatile Reconfigurable Digital Optical Diffractive Neural Network Based on Phase Change Material",
+    "authors": "Qiaomu Hu, Chu Wu, Jingyu Zhao, Rui Zeng, Shuang Zheng & Minming Zhang",
+    "venue": "CLEO 2024, paper SF2M.5 (2024)",
+    "status": {"zh": "会议论文", "en": "Conference paper"},
+    "url": "https://doi.org/10.1364/CLEO_SI.2024.SF2M.5",
+    "citation": "Hu, Q., Wu, C., Zhao, J., Zeng, R., Zheng, S. & Zhang, M. Non-volatile Reconfigurable Digital Optical Diffractive Neural Network Based on Phase Change Material. CLEO 2024, paper SF2M.5 (Optica Publishing Group, 2024). https://doi.org/10.1364/CLEO_SI.2024.SF2M.5"
+  },
+  {
+    "id": "microwave-demixing", "year": 2024, "kind": "commentary",
+    "title": "Demixing microwave signals using system-on-chip photonic processor",
+    "authors": "Sheng Gao, Chu Wu & Xing Lin",
+    "venue": "Light: Science & Applications 13, 58 (2024)",
+    "status": {"zh": "评论 · News & Views", "en": "News & Views"},
+    "url": "https://doi.org/10.1038/s41377-024-01404-6",
+    "citation": "Gao, S., Wu, C. & Lin, X. Demixing microwave signals using system-on-chip photonic processor. Light: Science & Applications 13, 58 (2024). https://doi.org/10.1038/s41377-024-01404-6"
+  },
+  {
+    "id": "pcm-on-chip-network-spie", "year": 2023, "kind": "conference",
+    "title": "Non-volatile and reconfigurable on-chip optical digital neural network based on Sb2Se3-assisted phase shifters",
+    "authors": "Qiaomu Hu, Chu Wu, Jingyu Zhao, Yuexing Su & Minming Zhang",
+    "venue": "Nanophotonics and Micro/Nano Optics IX, Proceedings of SPIE 12773 (2023)",
+    "status": {"zh": "会议论文", "en": "Conference paper"},
+    "url": "https://doi.org/10.1117/12.2687525",
+    "citation": "Hu, Q., Wu, C., Zhao, J., Su, Y. & Zhang, M. Non-volatile and reconfigurable on-chip optical digital neural network based on Sb2Se3-assisted phase shifters. Nanophotonics and Micro/Nano Optics IX, Proceedings of SPIE 12773 (2023). https://doi.org/10.1117/12.2687525"
+  }
+]

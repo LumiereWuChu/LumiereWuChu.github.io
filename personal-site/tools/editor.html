@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumière · 创作台</title>
+  <style>
+    :root{--paper:#f5f7f3;--ink:#20362f;--muted:#62716a;--line:#d6ded6;--accent:#dce8c8;--white:#fff;--serif:Georgia,'Songti SC','SimSun',serif;font-family:Arial,'Microsoft YaHei',sans-serif;color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button,a,input,textarea,select{outline-offset:4px}button{cursor:pointer}header{border-bottom:1px solid var(--line);padding:24px max(24px,calc((100vw - 1280px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:28px var(--serif);letter-spacing:-1px;display:flex;gap:12px;align-items:center}.mark{display:inline-block;width:26px;height:26px;border:1px solid var(--ink);border-radius:50%;background:linear-gradient(110deg,transparent 45%,var(--ink) 47%,var(--ink) 51%,transparent 53%)}.lang{border:1px solid var(--line);background:none;padding:7px 15px;border-radius:25px}main{max-width:1280px;margin:auto;padding:42px 24px 70px}.eyebrow{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}h1{font:normal clamp(34px,5vw,54px)/1.2 var(--serif);margin:0 0 20px}h2{font:normal 27px/1.4 var(--serif);margin:0 0 24px}p{max-width:760px}.intro{color:var(--muted);margin:0 0 28px}.tabs{display:flex;gap:8px;margin:28px 0}.tab{background:transparent;border:1px solid var(--line);border-radius:24px;padding:9px 23px}.tab[aria-pressed=true]{background:var(--ink);color:var(--white);border-color:var(--ink)}.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr);gap:32px;align-items:start}.panel{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:28px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:20px}.field label{font-size:14px;font-weight:600}.field input,.field textarea,.field select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:5px;background:#fcfdfb;color:var(--ink)}.field textarea{min-height:130px;resize:vertical;line-height:1.7}.field .body{min-height:240px}.field small,.hint{font-size:14px;color:var(--muted)}.field input[type=file]{font-size:14px;padding:12px}.field input[type=file]::file-selector-button{background:var(--accent);border:0;padding:8px 12px;margin-right:12px;border-radius:4px;color:var(--ink)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}.button{background:var(--ink);color:var(--white);border:1px solid var(--ink);border-radius:5px;padding:11px 21px}.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.preview{position:sticky;top:24px}.preview h2{margin-top:22px;overflow-wrap:anywhere}.preview .copy{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9}.preview .description{color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:20px}.preview img{max-width:100%;border-radius:5px;margin-top:20px}.preview audio{width:100%;margin-top:20px}.preview-meta{font-size:13px;letter-spacing:.04em;color:var(--muted)}.rule{border:0;border-top:1px solid var(--line);margin:26px 0}.status{padding:16px 20px;margin-top:22px;background:var(--accent);border-radius:5px;min-height:58px;white-space:pre-wrap}.status:empty{display:none}.footnote{color:var(--muted);font-size:14px;margin:24px 0 0}.hidden,[hidden]{display:none!important}.cv-panel{max-width:760px}.upload-preview:empty{display:none}code{font-size:.9em;background:#edf0e9;padding:2px 5px;border-radius:3px}@media(max-width:850px){.layout{grid-template-columns:1fr}.preview{position:static}.grid{grid-template-columns:1fr}.panel{padding:20px}header{padding:20px 24px}main{padding-top:30px}}@media(prefers-reduced-motion:no-preference){button{transition:background .15s}button:hover{filter:brightness(.96)}}
+  </style>
+</head>
+<body>
+<header><div class="brand"><span class="mark" aria-hidden="true"></span>Lumière <span style="font:14px Arial;color:var(--muted)" data-i18n="studio">创作台</span></div><button class="lang" id="language" type="button" aria-label="Switch to English">EN</button></header>
+<main>
+  <p class="eyebrow" data-i18n="eyebrow">A PRIVATE SPACE TO MAKE THINGS</p>
+  <h1 data-i18n="heading">为新的灵感，留一个位置。</h1>
+  <p class="intro" data-i18n="intro">在这里整理中英文文字，加入照片或音乐，再导出到博客。这个工具完全在本地运行；保存草稿和导出文件都不会发布到网上。</p>
+  <div class="tabs" role="group" aria-label="Editor mode"><button class="tab" id="entry-tab" type="button" aria-pressed="true" data-i18n="entryTab">内容创作</button><button class="tab" id="cv-tab" type="button" aria-pressed="false" data-i18n="cvTab">更新 CV</button></div>
+  <div id="entry-view" class="layout">
+    <form id="entry-form" class="panel">
+      <h2 data-i18n="entryTitle">写下这一篇</h2>
+      <div class="grid">
+        <div class="field"><label for="type" data-i18n="type">栏目</label><select id="type"><option value="note" data-i18n="note">笔记</option><option value="poetry" data-i18n="poetry">诗歌</option><option value="photography" data-i18n="photography">摄影</option><option value="music" data-i18n="music">音乐</option></select></div>
+        <div class="field"><label for="date" data-i18n="date">日期</label><input id="date" type="date" required></div>
+      </div>
+      <div class="field"><label for="id" data-i18n="slug">页面名称</label><input id="id" required maxlength="80" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="autumn-light" autocomplete="off"><small data-i18n="slugHint">用小写英文、数字和短横线，例如 autumn-light；每篇内容使用不同名称。</small></div>
+      <div class="grid">
+        <div class="field"><label for="title-zh" data-i18n="titleZh">中文标题</label><input id="title-zh" required maxlength="200" lang="zh-CN"></div>
+        <div class="field"><label for="title-en" data-i18n="titleEn">英文标题</label><input id="title-en" required maxlength="200" lang="en"></div>
+      </div>
+      <div class="grid">
+        <div class="field"><label for="excerpt-zh" data-i18n="excerptZh">中文简介</label><textarea id="excerpt-zh" required maxlength="1000" lang="zh-CN"></textarea></div>
+        <div class="field"><label for="excerpt-en" data-i18n="excerptEn">英文简介</label><textarea id="excerpt-en" required maxlength="1000" lang="en"></textarea></div>
+      </div>
+      <div class="field"><label for="body-zh" data-i18n="bodyZh">中文正文</label><textarea id="body-zh" class="body" required maxlength="100000" lang="zh-CN"></textarea><small data-i18n="bodyHint">可用 Markdown：段落、标题、列表和链接。诗歌可按原行分行。</small></div>
+      <div class="field"><label for="body-en" data-i18n="bodyEn">英文正文</label><textarea id="body-en" class="body" required maxlength="100000" lang="en"></textarea></div>
+      <div class="field"><label for="tags" data-i18n="tags">标签</label><input id="tags" placeholder="Light, Field notes"><small data-i18n="tagsHint">用英文逗号分隔，最多 12 个；标签在中英文页面中保持原文。</small></div>
+      <hr class="rule">
+      <div class="field"><label for="media" id="media-label" data-i18n="imageLabel">配图（可选）</label><input id="media" type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif"><small id="media-hint" data-i18n="imageHint">JPG、PNG、WebP、GIF 或 AVIF，每张不超过 12 MB。摄影栏目必须上传照片。</small></div>
+      <div id="alt-fields" class="grid" hidden>
+        <div class="field"><label for="alt-zh" data-i18n="altZh">中文图片 / 音频说明</label><input id="alt-zh" maxlength="400" lang="zh-CN"></div>
+        <div class="field"><label for="alt-en" data-i18n="altEn">英文图片 / 音频说明</label><input id="alt-en" maxlength="400" lang="en"></div>
+      </div>
+      <div class="actions"><button class="button" type="submit" data-i18n="export">导出内容包</button><button class="button secondary" id="save" type="button" data-i18n="save">保存文字草稿</button><button class="button secondary" id="restore" type="button" data-i18n="restore">恢复草稿</button></div>
+      <p class="footnote" data-i18n="draftNote">草稿只保留在此浏览器，不包含附件；恢复后请重新选择照片或音频。导出的内容包才是可迁移的完整副本。</p>
+    </form>
+    <aside class="panel preview" aria-label="Text preview"><p class="eyebrow" data-i18n="preview">文字预览</p><div class="preview-meta" id="preview-meta"></div><div id="upload-preview" class="upload-preview"></div><h2 id="preview-title"></h2><p id="preview-excerpt" class="description"></p><div id="preview-body" class="copy"></div><p class="footnote" data-i18n="previewHint">切换右上角语言可查看另一语言的文字。最终排版以博客构建后的页面为准。</p></aside>
+  </div>
+  <section id="cv-view" hidden>
+    <form id="cv-form" class="panel cv-panel"><h2 data-i18n="cvTitle">让履历保持更新</h2><p class="intro" data-i18n="cvIntro">选择正式 CV 的 PDF 文件，导出后通过同一个导入命令更新网站下载链接。已有 CV 需要使用 --replace，导入工具会先备份旧版。</p><div class="field"><label for="cv" data-i18n="cvLabel">CV 文件</label><input id="cv" type="file" accept="application/pdf,.pdf" required><small data-i18n="cvHint">PDF，不超过 10 MB。公开发布前请检查其中的个人信息。</small></div><button class="button" type="submit" data-i18n="exportCv">导出 CV 更新包</button></form>
+  </section>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+  <p class="footnote" data-i18n="next">导出后，在博客目录运行 node scripts/import-entry.mjs "内容包路径"，再运行 node scripts/build.mjs。确认本地预览后，再发布到 GitHub。</p>
+</main>
+<script>
+const dict = {
+ zh:{studio:'创作台',eyebrow:'A PRIVATE SPACE TO MAKE THINGS',heading:'为新的灵感，留一个位置。',intro:'在这里整理中英文文字，加入照片或音乐，再导出到博客。这个工具完全在本地运行；保存草稿和导出文件都不会发布到网上。',entryTab:'内容创作',cvTab:'更新 CV',entryTitle:'写下这一篇',type:'栏目',note:'笔记',poetry:'诗歌',photography:'摄影',music:'音乐',date:'日期',slug:'页面名称',slugHint:'用小写英文、数字和短横线，例如 autumn-light；每篇内容使用不同名称。',titleZh:'中文标题',titleEn:'英文标题',excerptZh:'中文简介',excerptEn:'英文简介',bodyZh:'中文正文',bodyEn:'英文正文',bodyHint:'可用 Markdown：段落、标题、列表和链接。诗歌可按原行分行。',tags:'标签',tagsHint:'用英文逗号分隔，最多 12 个；标签在中英文页面中保持原文。',imageLabel:'配图（可选）',photoLabel:'摄影作品',audioLabel:'音乐作品',imageHint:'JPG、PNG、WebP、GIF 或 AVIF，每张不超过 12 MB。摄影栏目必须上传照片。',audioHint:'MP3、M4A、OGG 或 WAV，不超过 25 MB。音乐栏目必须上传音频。',altZh:'中文图片 / 音频说明',altEn:'英文图片 / 音频说明',export:'导出内容包',save:'保存文字草稿',restore:'恢复草稿',draftNote:'草稿只保留在此浏览器，不包含附件；恢复后请重新选择照片或音频。导出的内容包才是可迁移的完整副本。',preview:'文字预览',previewHint:'切换右上角语言可查看另一语言的文字。最终排版以博客构建后的页面为准。',previewTitle:'你的标题，会出现在这里。',previewExcerpt:'为读者写下一小段介绍。',previewBody:'从第一句话开始。',cvTitle:'让履历保持更新',cvIntro:'选择正式 CV 的 PDF 文件，导出后通过同一个导入命令更新网站下载链接。已有 CV 需要使用 --replace，导入工具会先备份旧版。',cvLabel:'CV 文件',cvHint:'PDF，不超过 10 MB。公开发布前请检查其中的个人信息。',exportCv:'导出 CV 更新包',next:'导出后，在博客目录运行 node scripts/import-entry.mjs "内容包路径"，再运行 node scripts/build.mjs。确认本地预览后，再发布到 GitHub。',saved:'文字草稿已保存在此浏览器。附件不会随草稿保存。',restored:'已恢复文字草稿。请重新选择附件。',noDraft:'此浏览器还没有保存过草稿。',storageError:'浏览器无法保存本地草稿。请导出内容包备份。',exported:'内容包已导出。它还没有发布到网站；请按下方说明导入并构建。',cvExported:'CV 更新包已导出。导入后，网站会使用新的 PDF 下载链接。',fileType:'文件格式不支持，请选择提示中的文件类型。',fileSize:'文件超过大小限制，请先压缩。',missingMedia:'这个栏目需要上传作品文件。',tagsError:'最多使用 12 个标签，每个不超过 60 字符。',readError:'文件读取失败，请重新选择后再试。',busy:'正在整理附件…',error:'无法导出。请检查必填内容和附件。'},
+ en:{studio:'Studio',eyebrow:'A PRIVATE SPACE TO MAKE THINGS',heading:'Make room for a new idea.',intro:'Gather your Chinese and English words, add a photograph or a piece of music, and export it to your blog. Everything here runs locally. Saving a draft or exporting a file does not publish it online.',entryTab:'Create an entry',cvTab:'Update CV',entryTitle:'Begin a new piece',type:'Collection',note:'Notes',poetry:'Poetry',photography:'Photography',music:'Music',date:'Date',slug:'Page slug',slugHint:'Use lowercase letters, numbers and hyphens, such as autumn-light. Give each entry a unique slug.',titleZh:'Chinese title',titleEn:'English title',excerptZh:'Chinese introduction',excerptEn:'English introduction',bodyZh:'Chinese text',bodyEn:'English text',bodyHint:'Markdown is supported: paragraphs, headings, lists and links. Keep the original line breaks for poetry.',tags:'Tags',tagsHint:'Separate with commas; up to 12 tags. Tags keep their original wording in both language versions.',imageLabel:'Illustration (optional)',photoLabel:'Photograph',audioLabel:'Music recording',imageHint:'JPG, PNG, WebP, GIF or AVIF, up to 12 MB. Photography entries require a photograph.',audioHint:'MP3, M4A, OGG or WAV, up to 25 MB. Music entries require an audio file.',altZh:'Chinese image / audio description',altEn:'English image / audio description',export:'Export entry',save:'Save text draft',restore:'Restore draft',draftNote:'Drafts live only in this browser and do not include attachments. Select your image or audio again after restoring. An exported entry bundle is the complete portable copy.',preview:'TEXT PREVIEW',previewHint:'Use the language button to preview the other language. Check the built blog for the final typography.',previewTitle:'Your title belongs here.',previewExcerpt:'A few words to invite your reader in.',previewBody:'Start with the first sentence.',cvTitle:'Keep your story up to date',cvIntro:'Choose your official CV as a PDF, then import the exported bundle with the same command used for creative entries. To update an existing CV, use --replace; the importer keeps a backup first.',cvLabel:'CV file',cvHint:'PDF, up to 10 MB. Review its personal details before public release.',exportCv:'Export CV update',next:'After exporting, run node scripts/import-entry.mjs "path/to/bundle.json" in the blog folder, then node scripts/build.mjs. Review the local preview before publishing to GitHub.',saved:'Your text draft is saved in this browser. Attachments are not included.',restored:'Your text draft has been restored. Please select any attachments again.',noDraft:'There is no saved draft in this browser yet.',storageError:'This browser could not save the draft. Export an entry bundle to keep a copy.',exported:'Your entry bundle is exported. It has not been published. Import and build it using the instructions below.',cvExported:'Your CV bundle is exported. Import it to update the PDF download link.',fileType:'Unsupported file type. Choose one of the formats listed above.',fileSize:'The file exceeds the size limit. Please compress it first.',missingMedia:'This collection requires a media attachment.',tagsError:'Use up to 12 tags, each no longer than 60 characters.',readError:'Unable to read this file. Select it again and retry.',busy:'Preparing your attachment…',error:'Unable to export. Check the required fields and attachment.'}
+};
+let language = 'zh', previewURL = null;
+const $ = id => document.getElementById(id), t = key => dict[language][key];
+const fields = ['type','date','id','title-zh','title-en','excerpt-zh','excerpt-en','body-zh','body-en','tags','alt-zh','alt-en'];
+const mimeByExt = {jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',gif:'image/gif',avif:'image/avif',mp3:'audio/mpeg',m4a:'audio/mp4',ogg:'audio/ogg',wav:'audio/wav'};
+const status = text => {$('status').textContent = text;};
+function preview(){
+ $('preview-title').textContent = $('title-'+language).value || t('previewTitle');
+ $('preview-excerpt').textContent = $('excerpt-'+language).value || t('previewExcerpt');
+ $('preview-body').textContent = $('body-'+language).value || t('previewBody');
+ $('preview-meta').textContent = [t($('type').value),$('date').value].filter(Boolean).join(' · ');
+}
+function mediaState(reset = false){
+ const type = $('type').value, audio = type === 'music';
+ if(reset){$('media').value='';$('upload-preview').replaceChildren();if(previewURL) URL.revokeObjectURL(previewURL);previewURL=null;}
+ $('media').accept = audio ? 'audio/mpeg,audio/mp4,audio/ogg,audio/wav,.mp3,.m4a,.ogg,.wav' : 'image/jpeg,image/png,image/webp,image/gif,image/avif';
+ $('media').required = ['music','photography'].includes(type);
+ $('media-label').textContent = t(audio ? 'audioLabel' : type === 'photography' ? 'photoLabel':'imageLabel');
+ $('media-hint').textContent = t(audio ? 'audioHint':'imageHint');
+ const attached = !!$('media').files.length;
+ $('alt-fields').hidden = !attached;
+ $('alt-zh').required = attached; $('alt-en').required = attached;
+ preview();
+}
+function setLanguage(value){
+ language=value;document.documentElement.lang=value==='zh'?'zh-CN':'en';document.title='Lumière · '+t('studio');
+ document.querySelectorAll('[data-i18n]').forEach(node=>node.textContent=t(node.dataset.i18n));
+ $('language').textContent=value==='zh'?'EN':'中文';$('language').setAttribute('aria-label',value==='zh'?'Switch to English':'切换为中文');
+ $('status').textContent='';mediaState();
+}
+function readBase64(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(new Error(t('readError')));reader.readAsDataURL(file);});}
+function download(data,name){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+function fileInfo(file,type){
+ const ext=file.name.split('.').pop().toLowerCase(), mime=mimeByExt[ext];
+ if(!mime || (type==='music' ? !mime.startsWith('audio/') : !mime.startsWith('image/'))) throw new Error(t('fileType'));
+ if(!file.size || file.size > (type==='music'?25:12)*1024*1024) throw new Error(t('fileSize'));
+ return {ext,mime};
+}
+$('language').addEventListener('click',()=>setLanguage(language==='zh'?'en':'zh'));
+$('entry-tab').addEventListener('click',()=>{$('entry-view').hidden=false;$('cv-view').hidden=true;$('entry-tab').setAttribute('aria-pressed','true');$('cv-tab').setAttribute('aria-pressed','false');status('');});
+$('cv-tab').addEventListener('click',()=>{$('entry-view').hidden=true;$('cv-view').hidden=false;$('entry-tab').setAttribute('aria-pressed','false');$('cv-tab').setAttribute('aria-pressed','true');status('');});
+$('type').addEventListener('change',()=>mediaState(true));
+$('entry-form').addEventListener('input',preview);
+$('media').addEventListener('change',()=>{
+ if(previewURL) URL.revokeObjectURL(previewURL);previewURL=null;$('upload-preview').replaceChildren();
+ const file=$('media').files[0];
+ if(file){try{fileInfo(file,$('type').value);previewURL=URL.createObjectURL(file);const node=document.createElement($('type').value==='music'?'audio':'img');node.src=previewURL;if(node.tagName==='AUDIO'){node.controls=true;node.preload='metadata';}else node.alt=$('alt-'+language).value; $('upload-preview').append(node);status('');}catch(error){status(error.message);$('media').value='';}}
+ mediaState();
+});
+$('save').addEventListener('click',()=>{try{localStorage.setItem('lumiere-studio-draft-v1',JSON.stringify(Object.fromEntries(fields.map(id=>[id,$(id).value]))));status(t('saved'));}catch{status(t('storageError'));}});
+$('restore').addEventListener('click',()=>{try{const raw=localStorage.getItem('lumiere-studio-draft-v1');if(!raw){status(t('noDraft'));return;}const draft=JSON.parse(raw);fields.forEach(id=>{if(typeof draft[id]==='string')$(id).value=draft[id];});mediaState(true);status(t('restored'));}catch{status(t('storageError'));}});
+$('entry-form').addEventListener('submit',async event=>{
+ event.preventDefault();const submit=event.submitter;submit.disabled=true;
+ try{
+  const tags=$('tags').value.split(/[,，]/).map(x=>x.trim()).filter(Boolean);if(tags.length>12||tags.some(x=>x.length>60))throw new Error(t('tagsError'));
+  const pair=key=>({zh:$(key+'-zh').value.trim(),en:$(key+'-en').value.trim()});
+  const entry={id:$('id').value.trim(),type:$('type').value,date:$('date').value,title:pair('title'),excerpt:pair('excerpt'),body:pair('body'),tags:[...new Set(tags)],media:null};
+  const files=[],file=$('media').files[0];
+  if(file){status(t('busy'));const info=fileInfo(file,entry.type);const name=entry.id+'.'+info.ext;files.push({name,mime:info.mime,base64:await readBase64(file)});entry.media={path:'uploads/'+name,alt:pair('alt')};}
+  else if(['music','photography'].includes(entry.type))throw new Error(t('missingMedia'));
+  download({version:1,entry,files},entry.id+'.json');status(t('exported'));
+ }catch(error){status(error.message||t('error'));}finally{submit.disabled=false;}
+});
+$('cv-form').addEventListener('submit',async event=>{
+ event.preventDefault();const submit=event.submitter;submit.disabled=true;
+ try{const file=$('cv').files[0];if(!file||!file.name.toLowerCase().endsWith('.pdf'))throw new Error(t('fileType'));if(!file.size||file.size>10*1024*1024)throw new Error(t('fileSize'));status(t('busy'));download({version:1,cv:{name:'cv.pdf',base64:await readBase64(file)}},'cv-update.json');status(t('cvExported'));}catch(error){status(error.message||t('error'));}finally{submit.disabled=false;}
+});
+const today=new Date();$('date').value=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');
+setLanguage('zh');
+</script>
+</body>
+</html>

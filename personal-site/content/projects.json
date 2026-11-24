@@ -1,0 +1,38 @@
+[
+  {
+    "id": "meta-processing-units", "tag": "NC-MPU", "icon": "matrix",
+    "title": {"zh": "让微结构成为计算单元", "en": "Making microstructures compute"},
+    "subtitle": {"zh": "逆向设计的光子元处理单元", "en": "Inverse-designed meta processing units"},
+    "summary": {"zh": "探索近场光传播与逆向设计，将光子器件结构与多任务计算联系起来。", "en": "Connecting near-field light propagation and inverse design to multi-task photonic computing."},
+    "status": {"zh": "公开预印本", "en": "Public preprint"},
+    "body": {
+      "zh": "## 研究问题\n光的传播能否直接承担计算中的基本变换？这一方向围绕逆向设计的元处理单元展开，将器件结构与目标计算功能联系起来。\n\n## 工作视角\n关注近场光子计算中的器件设计、多任务能力与物理验证。对计算功能的讨论，需要同时考虑光场传播、器件约束与计算任务的要求。\n\n## 公开阅读\n相关工作已以预印本形式公开。论文的详细方法、实验设置与结果，以原文为准。",
+      "en": "## Research question\nCan the propagation of light directly carry out basic computational transformations? This direction investigates inverse-designed meta processing units that connect physical device structures to computational functions.\n\n## Perspective\nThe work concerns device design, multi-task capability, and physical validation in near-field photonic computing. Understanding a computational function requires considering light propagation, device constraints, and the task together.\n\n## Read the work\nA related preprint is publicly available. Please refer to the manuscript for the detailed methods, experimental settings, and results."
+    },
+    "link": "https://arxiv.org/abs/2607.08360"
+  },
+  {
+    "id": "generative-photonics", "tag": "GenMPU", "icon": "grid",
+    "title": {"zh": "从目标出发，寻找器件", "en": "From a target to a device"},
+    "subtitle": {"zh": "生成式光子逆向设计", "en": "Generative photonic inverse design"},
+    "summary": {"zh": "结合生成模型、检索与电磁仿真，探索从目标光学响应到器件结构的设计方法。", "en": "Exploring routes from target optical responses to device structures through generation, retrieval, and electromagnetic simulation."},
+    "status": {"zh": "研究中", "en": "Ongoing research"},
+    "body": {
+      "zh": "## 研究问题\n给定目标光学响应，如何寻找满足物理约束的器件结构？GenMPU 探索生成方法、检索与局部优化之间的协作。\n\n## 方法兴趣\n把数据表示、生成模型和电磁求解联系起来，重视不同仿真保真度之间的一致性，也关注候选结构的独立物理验证。\n\n## 当前范围\n本页是研究方向介绍。尚未公开的实验数据、模型与性能比较不在此发布。",
+      "en": "## Research question\nGiven a target optical response, how can we find a device that respects physical constraints? GenMPU explores the interaction of generative methods, retrieval, and local optimization.\n\n## Methodological interests\nThe direction connects data representations and generative models with electromagnetic solvers, with attention to consistency across simulation fidelities and independent physical validation of candidate devices.\n\n## Current scope\nThis page introduces the research direction. Unreleased experimental data, models, and performance comparisons are not published here."
+    },
+    "link": null
+  },
+  {
+    "id": "photonic-memory", "tag": "Photonics × AI", "icon": "wave",
+    "title": {"zh": "让光参与长上下文推理", "en": "Light for long-context inference"},
+    "subtitle": {"zh": "光辅助 KV-cache 与信息选择", "en": "Photonics-assisted KV cache and information selection"},
+    "summary": {"zh": "研究光学投影与长上下文信息选择的结合，连接物理计算前端与语言模型推理。", "en": "Investigating optical projections for long-context information selection, connecting physical computing frontends to language-model inference."},
+    "status": {"zh": "研究中", "en": "Ongoing research"},
+    "body": {
+      "zh": "## 研究问题\n在长上下文推理中，光学前端可以承担什么样的信息选择任务？这一方向关注光学投影与 KV-cache 访问之间的联系。\n\n## 系统视角\n同时考虑投影误差、信息访问与最终回答质量，把器件级行为放到完整推理链路中理解。\n\n## 当前范围\n本页仅介绍研究方向。软件实验、校准回放与真实硬件测量需要分别评价，不据此宣称完整系统的硬件加速。",
+      "en": "## Research question\nWhat information-selection tasks could an optical frontend perform during long-context inference? This direction studies connections between optical projection and KV-cache access.\n\n## Systems perspective\nProjection error, information access, and final answer quality need to be considered together, so device behavior can be understood within the inference pipeline.\n\n## Current scope\nThis is a research overview. Software experiments, calibrated replay, and physical measurements require separate evaluation; this page does not claim end-to-end hardware acceleration."
+    },
+    "link": null
+  }
+]

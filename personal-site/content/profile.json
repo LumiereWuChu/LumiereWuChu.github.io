@@ -1,0 +1,18 @@
+{
+  "name": {"zh": "吴楚", "en": "Chu Wu"},
+  "brand": "Lumière",
+  "role": {"zh": "清华大学电子工程系 · 博士生", "en": "Ph.D. student · Electronic Engineering, Tsinghua University"},
+  "lab": {"zh": "光子计算实验室 THPCI", "en": "THPCI Lab · Photonic Computing"},
+  "github": "https://github.com/LumiereWuChu",
+  "email": "wuc23@mails.tsinghua.edu.cn",
+  "labUrl": "https://www.photoniccomputing.org/people",
+  "cvFile": null,
+  "bio": {
+    "zh": "我研究光如何参与计算：从集成光子器件、逆向设计，到面向智能系统的光电协同。也希望在研究之外，为音乐、诗歌和摄影留一处安静的空间。",
+    "en": "I study how light can compute—from integrated photonic devices and inverse design to photonic–electronic systems for AI. Beyond research, I am making a quiet space for music, poetry, and photography."
+  },
+  "researchStatement": {
+    "zh": "我的兴趣在光子器件与计算系统之间。器件层面，关注如何用物理结构表达目标算子；方法层面，探索生成模型与电磁仿真的结合；系统层面，研究光学计算能为人工智能工作负载承担哪些实际任务。",
+    "en": "My interests sit between photonic devices and computing systems. At the device level, I explore how physical structures can represent target operators. At the methods level, I connect generative models with electromagnetic simulation. At the systems level, I investigate practical roles for optical computing in AI workloads."
+  }
+}

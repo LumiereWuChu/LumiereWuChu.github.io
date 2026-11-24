@@ -1,0 +1,170 @@
+[
+  {
+    "id": "leaving-the-eaves",
+    "title": {
+      "zh": "离檐",
+      "en": "Leaving the eaves"
+    },
+    "caption": {
+      "zh": "白鸽舒展双翼，掠过聚集着鸽群的屋檐。",
+      "en": "A white pigeon spreads its wings above an eave where other pigeons gather."
+    },
+    "alt": {
+      "zh": "蓝天下一只白鸽飞起，右侧屋檐上停着一群白鸽。",
+      "en": "A white pigeon in flight against a blue sky, with a group of pigeons resting on the eave to the right."
+    },
+    "src": "uploads/photo-leaving-the-eaves.webp",
+    "thumbnail": "uploads/photo-leaving-the-eaves-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "blossoms-on-the-branch",
+    "title": {
+      "zh": "枝上花开",
+      "en": "Blossoms on the branch"
+    },
+    "caption": {
+      "zh": "柔焦的绿意间，浅粉色花朵沿枝条展开。",
+      "en": "Pale pink blossoms trace the branches against a softly blurred green background."
+    },
+    "alt": {
+      "zh": "细长枝条上开着浅粉色花朵，背景是一片虚化的绿色。",
+      "en": "Pale pink flowers on slender branches, with a blurred green background."
+    },
+    "src": "uploads/photo-blossoms-on-the-branch.webp",
+    "thumbnail": "uploads/photo-blossoms-on-the-branch-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "eaves-against-blue",
+    "title": {
+      "zh": "青空与檐",
+      "en": "Eaves against blue"
+    },
+    "caption": {
+      "zh": "层叠的屋檐和装饰构件，在蓝天之下形成起伏的线条。",
+      "en": "Layered eaves and ornamental details form rising and falling lines beneath the blue sky."
+    },
+    "alt": {
+      "zh": "蓝天下层叠的传统建筑屋檐，带有黄色琉璃瓦和屋脊装饰。",
+      "en": "Overlapping traditional rooflines with yellow glazed tiles and ridge ornaments beneath a blue sky."
+    },
+    "src": "uploads/photo-eaves-against-blue.webp",
+    "thumbnail": "uploads/photo-eaves-against-blue-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "blossoms-by-the-bridge",
+    "title": {
+      "zh": "花枝与桥",
+      "en": "Blossoms by the bridge"
+    },
+    "caption": {
+      "zh": "花枝在前，桥上的行人与水面在后。",
+      "en": "Flowering branches in the foreground; people on a bridge and the water beyond."
+    },
+    "alt": {
+      "zh": "浅粉色花枝伸向画面中央，后方桥上有几位虚焦的行人。",
+      "en": "Pale pink flowering branches reach into the frame, with softly blurred people on a bridge behind them."
+    },
+    "src": "uploads/photo-blossoms-by-the-bridge.webp",
+    "thumbnail": "uploads/photo-blossoms-by-the-bridge-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "pavilion-by-the-water",
+    "title": {
+      "zh": "临水一亭",
+      "en": "Pavilion by the water"
+    },
+    "caption": {
+      "zh": "临水亭台被树影环绕，水面泛起浅色波纹。",
+      "en": "A waterside pavilion framed by trees, with pale ripples across the water."
+    },
+    "alt": {
+      "zh": "黄色屋顶的中式亭台临水而立，前景水面呈蓝绿色并泛起波纹。",
+      "en": "A Chinese pavilion with a yellow tiled roof beside rippling blue-green water."
+    },
+    "src": "uploads/photo-pavilion-by-the-water.webp",
+    "thumbnail": "uploads/photo-pavilion-by-the-water-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "tea-by-the-window",
+    "title": {
+      "zh": "窗边茶席",
+      "en": "Tea by the window"
+    },
+    "caption": {
+      "zh": "日光照进窗边，青花器物与茶席停在明暗之间。",
+      "en": "Window light falls across blue-and-white ceramics and a tea setting."
+    },
+    "alt": {
+      "zh": "窗边的茶席摆有青花瓷器、木架和茶具，阳光斜照在桌面上。",
+      "en": "Blue-and-white porcelain, a wooden display stand, and tea utensils arranged beside a sunlit window."
+    },
+    "src": "uploads/photo-tea-by-the-window.webp",
+    "thumbnail": "uploads/photo-tea-by-the-window-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": "2023-12-31",
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "a-street-moment",
+    "title": {
+      "zh": "街巷一瞬",
+      "en": "A street moment"
+    },
+    "caption": {
+      "zh": "红色旗帜、黄色灯笼与屋顶上的身影，构成街巷的一瞬。",
+      "en": "A red flag, yellow lanterns, and a figure above the roofline mark a moment in the street."
+    },
+    "alt": {
+      "zh": "蓝天下，一人在传统建筑屋顶边举起红色旗帜，檐下挂着黄色灯笼。",
+      "en": "A person raises a red flag above a traditional roofline under a blue sky, with yellow lanterns below the eaves."
+    },
+    "src": "uploads/photo-a-street-moment.webp",
+    "thumbnail": "uploads/photo-a-street-moment-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  },
+  {
+    "id": "in-the-stage-light",
+    "title": {
+      "zh": "在舞台光里",
+      "en": "In the stage light"
+    },
+    "caption": {
+      "zh": "蓝红舞台灯光中，手持话筒的身影与乐器交叠。",
+      "en": "A figure holding a microphone and musical instruments overlap in blue and red stage light."
+    },
+    "alt": {
+      "zh": "现场演出的舞台上，一位表演者手持话筒，周围是蓝红色灯光和乐器。",
+      "en": "A performer holding a microphone on a live stage surrounded by blue and red lighting and instruments."
+    },
+    "src": "uploads/photo-in-the-stage-light.webp",
+    "thumbnail": "uploads/photo-in-the-stage-light-small.webp",
+    "width": 2000,
+    "height": 1333,
+    "date": null,
+    "collectedAt": "2026-11-24"
+  }
+]
