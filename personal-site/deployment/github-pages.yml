@@ -1,0 +1,62 @@
+name: Build and publish Lumière
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'personal-site/**'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'personal-site/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build both languages
+        working-directory: personal-site
+        env:
+          SITE_URL: https://lumierewuchu.github.io
+        run: node scripts/build.mjs
+      - name: Check links and bilingual content
+        working-directory: personal-site
+        run: node scripts/check.mjs
+      - name: Test content import
+        working-directory: personal-site
+        run: node --test tests/import-entry.test.mjs
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: personal-site/dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

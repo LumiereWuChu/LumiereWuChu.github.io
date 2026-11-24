@@ -1,0 +1,38 @@
+[
+  {
+    "id": "nc-mpu", "year": 2026,
+    "title": "Inverse-designed meta processing units for multi-task near-field photonic computing",
+    "authors": "Chu Wu, Zeyu Cai, Songtao Yang, Ruoyu Shen, Yinan Zhao, Haiou Zhang, Wei Chu & Xing Lin",
+    "venue": "arXiv:2607.08360",
+    "status": {"zh": "预印本", "en": "Preprint"},
+    "url": "https://arxiv.org/abs/2607.08360",
+    "citation": "Wu, C., Cai, Z., Yang, S., Shen, R., Zhao, Y., Zhang, H., Chu, W. & Lin, X. Inverse-designed meta processing units for multi-task near-field photonic computing. arXiv:2607.08360 (2026). https://arxiv.org/abs/2607.08360"
+  },
+  {
+    "id": "dmnn-meta-training", "year": 2026,
+    "title": "Meta-Training of Diffractive Meta-Neural Networks for Super-Resolution Direction of Arrival Estimation",
+    "authors": "Songtao Yang, Sheng Gao, Chu Wu, Zejia Zhao, Haiou Zhang & Xing Lin",
+    "venue": "Laser & Photonics Reviews 20(11), e02608 (2026)",
+    "status": {"zh": "期刊论文", "en": "Journal article"},
+    "url": "https://doi.org/10.1002/lpor.202502608",
+    "citation": "Yang, S., Gao, S., Wu, C., Zhao, Z., Zhang, H. & Lin, X. Meta-Training of Diffractive Meta-Neural Networks for Super-Resolution Direction of Arrival Estimation. Laser & Photonics Reviews 20(11), e02608 (2026). https://doi.org/10.1002/lpor.202502608"
+  },
+  {
+    "id": "neuromorphic-photonics-roadmap", "year": 2025,
+    "title": "Roadmap on Neuromorphic Photonics",
+    "authors": "Daniel Brunner et al. (including Chu Wu)",
+    "venue": "arXiv:2501.07917",
+    "status": {"zh": "预印本 · 路线图", "en": "Preprint · Roadmap"},
+    "url": "https://arxiv.org/abs/2501.07917",
+    "citation": "Brunner, D., et al. Roadmap on Neuromorphic Photonics. arXiv:2501.07917 (2025). https://arxiv.org/abs/2501.07917"
+  },
+  {
+    "id": "microwave-demixing", "year": 2024,
+    "title": "Demixing microwave signals using system-on-chip photonic processor",
+    "authors": "Sheng Gao, Chu Wu & Xing Lin",
+    "venue": "Light: Science & Applications 13, 58 (2024)",
+    "status": {"zh": "评论 · News & Views", "en": "News & Views"},
+    "url": "https://doi.org/10.1038/s41377-024-01404-6",
+    "citation": "Gao, S., Wu, C. & Lin, X. Demixing microwave signals using system-on-chip photonic processor. Light: Science & Applications 13, 58 (2024). https://doi.org/10.1038/s41377-024-01404-6"
+  }
+]

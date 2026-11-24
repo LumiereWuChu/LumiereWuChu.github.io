@@ -1,0 +1,21 @@
+[
+  {
+    "id": "nonlinear-scattering-notes",
+    "type": "note",
+    "date": "2025-09-21",
+    "title": {
+      "zh": "读书笔记：让无序介质参与计算",
+      "en": "Reading notes: computing with disordered media"
+    },
+    "excerpt": {
+      "zh": "从铌酸锂纳米晶体、随机散射与二次谐波，看光学系统如何形成非线性特征映射。整理自第一周读书笔记。",
+      "en": "Lithium niobate nanocrystals, random scattering and second-harmonic generation as a physical route to nonlinear features. Adapted from my original reading notes."
+    },
+    "body": {
+      "zh": "整理自 2025 年 9 月 21 日发布的《第一周读书笔记》。这是对他人论文的阅读记录。\n\n## 读到的工作\n\n《Large-scale photonic computing with nonlinear disordered media》研究由铌酸锂纳米晶体构成的无序多晶薄片。随机准相位匹配、多重散射与二次谐波生成共同作用，使这一物理系统能够提供非线性特征。\n\n## 信息如何经过系统\n\n输入数据首先编码为空间光调制器（SLM）的相位分布。调制后的光照射到无序薄片上，产生线性与非线性散斑，再通过强度探测获得用于机器学习的特征。\n\n这里值得关注的是，光在介质中的传播与非线性作用本身就参与了特征变换。原笔记记录了它在分类、回归和图分类任务中的应用。\n\n## 延伸阅读\n\n原论文发表于 Nature Computational Science 4, 429–439 (2024)。\n\n[阅读原论文](https://doi.org/10.1038/s43588-024-00644-1)\n\n[查看原始读书笔记](https://github.com/LumiereWuChu/LumiereWuChu.github.io/blob/master/content/post/%E7%AC%AC%E4%B8%80%E5%91%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.md)",
+      "en": "Adapted from “First-week reading notes,” originally posted on 21 September 2025. This is a reading note about another team's paper.\n\n## The paper\n\n“Large-scale photonic computing with nonlinear disordered media” studies a disordered polycrystalline slab of lithium niobate nanocrystals. Random quasi-phase-matching, multiple scattering and second-harmonic generation combine to produce nonlinear optical features.\n\n## The information path\n\nInput data are encoded in the phase pattern of a spatial light modulator (SLM). The modulated light illuminates the slab, producing linear and nonlinear speckle patterns. Intensity measurements then supply features for machine learning.\n\nLight propagation and nonlinearity within the material therefore participate directly in the feature transformation. My original notes recorded applications to classification, regression and graph classification.\n\n## Further reading\n\nThe paper appeared in Nature Computational Science 4, 429–439 (2024).\n\n[Read the paper](https://doi.org/10.1038/s43588-024-00644-1)\n\n[Original reading notes](https://github.com/LumiereWuChu/LumiereWuChu.github.io/blob/master/content/post/%E7%AC%AC%E4%B8%80%E5%91%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.md)"
+    },
+    "tags": ["Photonics", "Reading"],
+    "source": "https://github.com/LumiereWuChu/LumiereWuChu.github.io/blob/master/content/post/%E7%AC%AC%E4%B8%80%E5%91%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.md"
+  }
+]
