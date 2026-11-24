@@ -194,5 +194,34 @@
       "translation": "English translation of the Chinese original",
       "hasOccludedText": false
     }
+  },
+  {
+    "id": "autumn-night-wedding",
+    "type": "poetry",
+    "date": "2026-10-22",
+    "title": {
+      "zh": "秋夜的婚礼",
+      "en": "A Wedding on an Autumn Night"
+    },
+    "excerpt": {
+      "zh": "云泥之间的冷战，秋叶与秋野的无声契约。—— LUMI",
+      "en": "Between cloud and earth, autumn leaves and fields enter a silent covenant. — LUMI"
+    },
+    "body": {
+      "zh": "秋夜\n云泥之间的冷战\n我在泛黄的路灯下旁观\n听见一片潸潸落下的\n秋叶\n触碰皮肤的瞬间\n微微震颤 堆叠如山 直至成为\n秋野\n麦子是流动的河\n指纹是熟睡的沟壑\n寒意凝结在芒尖的露珠指环\n契约\n田垄默读\nA comme amour\n无声的落款\n\n2026.10.22\n– LUMI –",
+      "en": "Autumn night\nA cold war between cloud and earth\nI watch beneath a yellowing streetlamp\nHear one falling, tear by tear—\nAn autumn leaf\nThe instant it touches skin\nA faint tremor, heaped into mountains, until it becomes\nAn autumn field\nWheat is a flowing river\nFingerprints are sleeping furrows\nCold gathers in a dewdrop ring on the tip of an awn\nA covenant\nThe field ridges read in silence\nA comme amour\nA signature without a sound\n\n2026.10.22\n– LUMI –\n\n> English translation of the Chinese original. The French line “A comme amour” is retained from the poem."
+    },
+    "tags": [
+      "Poetry",
+      "Autumn",
+      "LUMI"
+    ],
+    "media": {
+      "path": "uploads/autumn-night-wedding.webp",
+      "alt": {
+        "zh": "诗稿原配图：秋夜树荫下的街道，远处灯光与骑行者的剪影。",
+        "en": "Original poem illustration: an autumn avenue at night, distant lights, and a cyclist in silhouette."
+      }
+    }
   }
 ]
